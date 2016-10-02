@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tricoder42/voidcss.git"
+    "url": "git+https://github.com/tricoder42/voidcss-vertical-rhythm.git"
   },
   "keywords": [
     "voidcss",
@@ -25,9 +25,9 @@
   "author": "Tomáš Ehrlich <tomas.ehrlich@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tricoder42/voidcss/issues"
+    "url": "https://github.com/tricoder42/voidcss-vertical-rhythm/issues"
   },
-  "homepage": "https://github.com/tricoder42/voidcss#readme",
+  "homepage": "https://github.com/tricoder42/voidcss-vertical-rhythm#readme",
   "devDependencies": {
     "cz-conventional-changelog": "^1.2.0",
     "mocha": "^3.0.2",
