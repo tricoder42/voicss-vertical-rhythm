@@ -1,0 +1,47 @@
+@import "true";
+
+// setup variables and import plugin
+$vr-font-size: 12px;
+$vr-line-height: 1.2;
+@import 'vertical-rhythm';
+
+
+@include test-module('Vertical Rhythm') {
+  @include test('[variable] vr-baseline') {
+    $expect: $vr-font-size * $vr-line-height;
+    @include assert-equal($vr-baseline, $expect);
+  }
+
+  @include test('[function] vr') {
+    $test: vr(2);
+    $expect: 2 * $vr-baseline;
+    @include assert-equal($test, $expect,
+      'Calculate distance based on default baseline');
+
+    $test: vr(2, 20px);
+    $expect: 2 * 20px;
+    @include assert-equal($test, $expect,
+      'Calculate distance based on default baseline');
+  }
+
+  @include test('[function] vr-scale') {
+    $test: vr-scale(12px);
+    $expect: $vr-baseline / 12px;
+    @include assert-equal($test, $expect,
+      'Scale line-height for different font size.');
+  }
+
+  // Testing Mixins
+  @include test('[mixin] vr-init') {
+    @include assert('Initialize font size and line-height.') {
+      @include output {
+        @include vr-init();
+      }
+
+      @include expect {
+        font-size: 100%;
+        line-height: $vr-line-height;
+      }
+    }
+  }
+}

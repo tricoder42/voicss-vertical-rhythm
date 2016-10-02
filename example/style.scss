@@ -1,0 +1,42 @@
+@import "../src/vertical-rhythm.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  @include vr-init;
+}
+
+body {
+  @include vr-grid;
+}
+
+h1 {
+  $size: 32px;
+  $baseline: vr-scale($size);
+
+  font-size: $size;
+  line-height: $baseline;
+
+  margin-top: 0;
+  margin-bottom: vr(1, $baseline);
+}
+
+h2 {
+  $size: 24px;
+  $baseline: vr-scale($size);
+
+  font-size: $size;
+  line-height: $baseline;
+
+  margin-top: vr(2, $baseline);
+  margin-bottom: vr(1, $baseline);
+}
+
+p {
+  margin-top: $vr-baseline;
+  margin-bottom: $vr-baseline;
+}
