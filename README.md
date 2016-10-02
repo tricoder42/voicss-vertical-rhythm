@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/tricoder42/voicss-vertical-rhythm.svg?style=svg)](https://circleci.com/gh/tricoder42/voicss-vertical-rhythm)
+[![CircleCI](https://circleci.com/gh/tricoder42/voidcss-vertical-rhythm.svg?style=svg)](https://circleci.com/gh/tricoder42/voidcss-vertical-rhythm)
 
 Vertical Rhythm plugin
 ======================
