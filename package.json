@@ -3,7 +3,7 @@
   "version": "1.2.0",
   "description": "VoidCSS plugin to help maintain consistent baseline",
   "scripts": {
-    "test": "mocha src/tests.js"
+    "test": "voidcss-scripts test"
   },
   "main": "src/vertical-rhythm.scss",
   "style": "src/vertical-rhythm.scss",
@@ -30,8 +30,7 @@
   "homepage": "https://github.com/tricoder42/voidcss-vertical-rhythm#readme",
   "devDependencies": {
     "cz-conventional-changelog": "^1.2.0",
-    "mocha": "^3.0.2",
-    "sass-true": "^2.1.3"
+    "voidcss-scripts": "^0.1.0"
   },
   "config": {
     "commitizen": {
